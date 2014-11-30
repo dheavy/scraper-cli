@@ -5,10 +5,11 @@ var program = require('commander'),
 
 program
   .version('0.3.0')
-  .option('-u, --url', 'URL to crawl and scrape')
-  .option('-i, --userid', 'User ID')
+  .option('-u, --url [url]', 'URL to crawl and scrape')
+  .option('-i, --id [id]', 'Job ID')
+  .option('-r, --requester [requester]','User ID')
   .parse(process.argv);
 
-if (!program.url || !program.userid) {
+if (!program.url || !program.id || !program.requester) {
   return console.log('Error: missing argument(s)');
-} 
+}
