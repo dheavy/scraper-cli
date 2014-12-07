@@ -1,0 +1,22 @@
+{
+  "application": {
+    "url": "https://localhost:4430/"
+  },
+  "logger": {
+    "filename": "mypleasure-crawler.log",
+    "format": "combined"
+  },
+  "ssl": {
+    "key": "ssl/server.key",
+    "cert": "ssl/server.crt"
+  },
+  "mongo": {
+    "url": "mongodb://localhost/mypleasure-video-store",
+    "options": {
+      "server": {
+        "auto_reconnect": true,
+        "poolSize": 10
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "application": {
+    "name": "scraper-cli"
+  },
+  "providers": {
+    "settings": {
+      "durationRegExp": "/(?:(\\d+)hrs)?(\\d+)min(\\d+)sec/",
+    },
+    "list": [
+      { "name": "youporn.com",  "urlFormat": "watch/\\d+/", "urlRegExp": "watch\/(\\d+)\/", "basedOn": null, "browserOptions": null },
+      { "name": "pornhub.com",  "urlFormat": "view_video\\.php\\?viewkey=\\d+", "urlRegExp": "view_video\\.php\\?viewkey=(\\d+)", "basedOn": null, "browserOptions": null },
+      { "name": "xvideos.com",  "urlFormat": "/video\\d+/", "urlRegExp": "\/video(\\d+)\/", "basedOn": null, "browserOptions": null },
+      { "name": "xnxx.com",  "urlFormat": "/video\\d+/", "urlRegExp": "\/video(\\d+)\/", "basedOn": "xvideos.com", "browserOptions": null },
+      { "name": "xhamster.com", "urlFormat": "movies/\\d+/", "urlRegExp": "movies\/(\\d+)\/", "basedOn": null, "browserOptions": null },
+      { "name": "redtube.com",  "urlFormat": "\\d+", "urlRegExp": "redtube.com\/(\\d+)", "basedOn": null, "browserOptions": null },
+      { "name": "tube8.com",  "urlFormat": "(\\w+)\/(\\d+)", "urlRegExp": "(\\w+)\/(\\d+)", "basedOn": null, "browserOptions": null },
+      { "name": "beeg.com", "urlFormat": "\\d+", "urlRegExp": "\\d+", "basedOn": null, "browserOptions": null },
+      { "name": "keezmovies.com", "urlFormat": "", "urlRegExp": "", "basedOn": null, "browserOptions": null }
+    ]
+  }
+}
