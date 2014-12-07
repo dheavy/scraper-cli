@@ -4,7 +4,7 @@
   },
   "providers": {
     "settings": {
-      "durationRegExp": "/(?:(\\d+)hrs)?(\\d+)min(\\d+)sec/",
+      "durationRegExp": "/(?:(\\d+)hrs)?(\\d+)min(\\d+)sec/"
     },
     "list": [
       { "name": "youporn.com",  "urlFormat": "watch/\\d+/", "urlRegExp": "watch\/(\\d+)\/", "basedOn": null, "browserOptions": null },

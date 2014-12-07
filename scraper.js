@@ -3,7 +3,8 @@
 var program = require('commander'),
     config  = require('./lib/configuration'),
     logger  = require('./lib/logger'),
-    url, userId;
+    Scraper = require('./lib/scraper'),
+    url, id, requester, scraper;
 
 program
   .version('0.3.0')
@@ -15,5 +16,11 @@ program
 if (!program.url || !program.id || !program.requester) {
   return console.log('Error: missing argument(s)');
 }
+
+url = program.url;
+id = program.id,
+requester = program.requester;
+
+scraper = new Scraper(url, id, requester);
 
 console.log(program.url, program.id, program.requester)
