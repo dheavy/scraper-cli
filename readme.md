@@ -1,3 +1,6 @@
+[ DEPRECATED - FOR ILLUSTRATION/ARCHIVING PURPOSES ONLY ]
+
+
 MyPleasu.re Scraper CLI
 ================================
 
